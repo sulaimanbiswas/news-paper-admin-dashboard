@@ -347,9 +347,11 @@
                         id="location"
                         name="location"
                       />
-                      <label class="custom-control-label h5 pb-2" for="location"
+                      <label class="custom-control-label h5" for="location"
                         >Local Location</label
                       >
+                    </div>
+                    <div class="form-group">
                       <div class="row">
                         <div class="col-12 col-md-4">
                           <p class="card-title-text">Division</p>
@@ -387,7 +389,7 @@
                       </div>
                     </div>
 
-                    <div class="custom-control custom-checkbox form-group">
+                    <div class="form-group">
                       <label class="h5" for="category">Category</label>
                       <div class="row">
                         <div class="col-12 col-md-6">
@@ -415,7 +417,7 @@
                       </div>
                     </div>
 
-                    <div class="custom-control custom-checkbox form-group">
+                    <div class="form-group">
                       <label class="h5" for="reporter">Reporter</label>
                       <select class="custom-select">
                         <option selected class="d-none">Select Category</option>
@@ -423,6 +425,42 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="sub-title" class="h5">Sub Title</label>
+                      <form
+                        action="https://infinitysoftway.com/file-upload"
+                        class="dropzone"
+                      >
+                        <div class="dz-message needsclick">
+                          <i class="la la-cloud-upload d-block mb-2"></i>
+                          Drop files here or click to upload.<br />
+                          <span class="note needsclick"
+                            >(This is just a demo dropzone. Selected files are
+                            <strong>not</strong> actually uploaded.)</span
+                          >
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="card-title">
+                      <h5>Image</h5>
+                    </div>
+                    <div class="card-body">
+                      <form
+                        action="https://infinitysoftway.com/file-upload"
+                        class="dropzone"
+                      >
+                        <div class="dz-message needsclick">
+                          <i class="la la-cloud-upload d-block mb-2"></i>
+                          Drop files here or click to upload.<br />
+                          <span class="note needsclick"
+                            >(This is just a demo dropzone. Selected files are
+                            <strong>not</strong> actually uploaded.)</span
+                          >
+                        </div>
+                      </form>
                     </div>
 
                     <div class="form-group">
@@ -460,6 +498,9 @@
 
     <!-- summernote -->
     <script src="js/summernote/summernote.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="js/dropzone/dropzone.min.js"></script>
 
     <!-- custom -->
     <script src="js/custom.js"></script>
