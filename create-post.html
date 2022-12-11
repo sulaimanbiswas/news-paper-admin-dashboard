@@ -301,7 +301,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="form-group">
-                      <label for="title">Title</label>
+                      <label for="title" class="h5">Title</label>
                       <input
                         id="title"
                         class="form-control"
@@ -310,7 +310,7 @@
                       />
                     </div>
                     <div class="form-group">
-                      <label for="slug">Slug</label>
+                      <label for="slug" class="h5">Slug</label>
                       <input
                         id="slug"
                         class="form-control"
@@ -319,7 +319,7 @@
                       />
                     </div>
                     <div class="form-group">
-                      <label for="sub-title">Sub Title</label>
+                      <label for="sub-title" class="h5">Sub Title</label>
                       <input
                         id="sub-title"
                         class="form-control"
@@ -328,8 +328,11 @@
                       />
                     </div>
                     <div class="form-group">
-                      <label for="sub-title">Description</label>
-                      <textarea class="summernote">Type...</textarea>
+                      <label for="description" class="h5">Description</label>
+                      <textarea id="description" class="summernote">
+                        Type...
+                        </textarea
+                      >
                     </div>
                   </div>
                 </div>
@@ -337,82 +340,81 @@
               <div class="col-lg-6">
                 <div class="card">
                   <div class="card-body">
-                    <div class="form-group">
-                      <label for="firstname">Firstname</label>
-                      <input
-                        id="firstname"
-                        class="form-control"
-                        name="firstname"
-                        type="text"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="lastname">Lastname</label>
-                      <input
-                        id="lastname"
-                        class="form-control"
-                        name="lastname"
-                        type="text"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="username">Username</label>
-                      <input
-                        id="username"
-                        class="form-control"
-                        name="username"
-                        type="text"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="password">Password</label>
-                      <input
-                        id="password"
-                        class="form-control"
-                        name="password"
-                        type="password"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="confirm_password">Confirm password</label>
-                      <input
-                        id="confirm_password"
-                        class="form-control"
-                        name="confirm_password"
-                        type="password"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input
-                        id="email1"
-                        class="form-control"
-                        name="email"
-                        type="email"
-                      />
-                    </div>
                     <div class="custom-control custom-checkbox form-group">
                       <input
                         type="checkbox"
                         class="custom-control-input"
-                        id="agree"
-                        name="agree"
+                        id="location"
+                        name="location"
                       />
-                      <label class="custom-control-label" for="agree"
-                        >Check this custom checkbox</label
+                      <label class="custom-control-label h5 pb-2" for="location"
+                        >Local Location</label
                       >
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <p class="card-title-text">Division</p>
+                          <select class="custom-select">
+                            <option selected class="d-none">
+                              Select Division
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <p class="card-title-text">Districts</p>
+                          <select class="custom-select">
+                            <option selected class="d-none">
+                              Select District
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <p class="card-title-text">Upazila</p>
+                          <select class="custom-select">
+                            <option selected class="d-none">
+                              Select Upazila
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
+
                     <div class="custom-control custom-checkbox form-group">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="newsletter"
-                        name="newsletter"
-                      />
-                      <label class="custom-control-label" for="newsletter"
-                        >I'd like to receive the newsletter</label
-                      >
+                      <label class="h5" for="category">Category</label>
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <p class="card-title-text">Category</p>
+                          <select class="custom-select">
+                            <option selected class="d-none">
+                              Select Category
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <p class="card-title-text">Sub Category</p>
+                          <select class="custom-select">
+                            <option selected class="d-none">
+                              Select Sub Category
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
+
                     <div class="form-group">
                       <input
                         class="submit btn btn-primary"
