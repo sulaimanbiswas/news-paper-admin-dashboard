@@ -317,7 +317,7 @@
                             <button
                               class="btn btn-info btn-icon btn-sm mb-1 mr-2 mb-1"
                               data-toggle="modal"
-                              data-target="#category-add"
+                              data-target="#category-edit"
                             >
                               <i class="la la-edit"></i>
                             </button>
@@ -337,7 +337,7 @@
             </div>
           </div>
 
-          <!-- Modal -->
+          <!-- Category Add Modal -->
           <div
             class="modal fade"
             id="category-add"
@@ -348,7 +348,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Category</h5>
+                  <h5 class="modal-title">Create Category</h5>
                   <button
                     type="button"
                     class="close"
@@ -398,7 +398,70 @@
               </div>
             </div>
           </div>
-          <!-- End Modal -->
+          <!-- End Category Add Modal -->
+
+          <!-- Category Edit Modal -->
+          <div
+            class="modal fade"
+            id="category-edit"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Edit Category</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body p-5">
+                  <form>
+                    <div class="form-group">
+                      <label for="cat-bn-name">Name Bangla</label>
+                      <input
+                        id="cat-bn-name"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cat-en-name">Name English</label>
+                      <input
+                        id="cat-en-name"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cat-title-name">Category Title</label>
+                      <input
+                        id="cat-title-name"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                      <button type="reset" class="btn btn-danger mr-2">
+                        Clear
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        Edit Category
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Category Edit Modal -->
 
           <!-- Content Card -->
         </div>
