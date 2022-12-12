@@ -1843,7 +1843,7 @@
     var _summernote = $(".summernote");
     if (_summernote.exists()) {
       _summernote.summernote({
-        height: 250,
+        height: 713,
       });
     }
 

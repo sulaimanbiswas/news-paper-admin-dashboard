@@ -244,38 +244,6 @@
               </li>
             </ul>
           </li>
-          <li class="">
-            <a href="#">
-              <i class="la la-edit"></i> <span>Other</span>
-              <i class="la la-angle-right down-arrow"></i>
-            </a>
-            <ul class="sidebar-submenu">
-              <li class="">
-                <a href="blank-page.html"
-                  ><i class="la la-minus"></i> <span> Other </span>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="la la-minus"></i> <span>File manager </span>
-                  <i class="la la-angle-right down-arrow"></i>
-                </a>
-                <ul class="sidebar-submenu">
-                  <li>
-                    <a href="file-manager.html"
-                      ><i class="la la-minus"></i> <span> file manager </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="file-manager-grid.html"
-                      ><i class="la la-minus"></i>
-                      <span> file manager grid </span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
         </ul>
       </div>
 
@@ -288,9 +256,7 @@
             </div>
             <div class="col-md-6">
               <div class="add-new">
-                <a class="btn btn-primary" href="#">
-                  <i class="feather icon-plus"></i> Add New Post</a
-                >
+                <a class="btn btn-primary" href="/all-post.html"> All Post</a>
               </div>
             </div>
           </div>
@@ -342,10 +308,7 @@
                     <!-- Description -->
                     <div class="form-group">
                       <label for="description" class="h5">Description</label>
-                      <textarea id="description" class="summernote">
-                        Type...
-                        </textarea
-                      >
+                      <textarea id="description" class="summernote"> </textarea>
                     </div>
                     <!-- End Description -->
                   </div>
@@ -523,11 +486,26 @@
                         id="imageTitle"
                         class="form-control"
                         name="imageTitle"
-                        required
                       ></textarea>
                     </div>
 
                     <!-- End Images Title -->
+
+                    <!-- Video Embed -->
+
+                    <div class="form-group">
+                      <label for="video-embed" class="h5"
+                        >Video Embed Link</label
+                      >
+                      <input
+                        id="video-embed"
+                        class="form-control"
+                        name="video-embed"
+                        type="text"
+                      />
+                    </div>
+
+                    <!-- End Video Embed -->
 
                     <!-- Social Description -->
 
@@ -567,14 +545,14 @@
                         id="tagsinput-markup"
                         type="text"
                         class="form-control"
-                        value="Amsterdam,Sydney,Beijing,Cairo"
+                        value="janobani"
                         data-role="tagsinput"
                       />
                     </div>
 
                     <!-- End Tag -->
 
-                    <div class="form-group">
+                    <div class="form-group text-right">
                       <input
                         class="submit btn btn-primary"
                         type="submit"
@@ -619,6 +597,5 @@
 
     <!-- custom -->
     <script src="js/custom.js"></script>
-    <script src="js/jquery-validation/validation.js"></script>
   </body>
 </html>
