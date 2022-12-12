@@ -338,7 +338,7 @@
                             <button
                               class="btn btn-info btn-icon btn-sm mb-1 mr-2 mb-1"
                               data-toggle="modal"
-                              data-target="#category-edit"
+                              data-target="#division-edit"
                             >
                               <i class="la la-edit"></i>
                             </button>
@@ -419,7 +419,7 @@
           <!-- Category Edit Modal -->
           <div
             class="modal fade"
-            id="category-edit"
+            id="division-edit"
             tabindex="-1"
             role="dialog"
             aria-hidden="true"
@@ -427,7 +427,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Edit Category</h5>
+                  <h5 class="modal-title">Edit Division</h5>
                   <button
                     type="button"
                     class="close"
@@ -440,30 +440,25 @@
                 <div class="modal-body p-5">
                   <form>
                     <div class="form-group">
-                      <label for="cat-bn-name">Name Bangla</label>
+                      <label for="div-bn-name">Name Bangla</label>
                       <input
-                        id="cat-bn-name"
+                        id="div-bn-name"
                         type="text"
                         class="form-control"
                       />
                     </div>
                     <div class="form-group">
-                      <label for="cat-en-name">Name English</label>
+                      <label for="div-en-name">Name English</label>
                       <input
-                        id="cat-en-name"
+                        id="div-en-name"
                         type="text"
                         class="form-control"
                       />
                     </div>
                     <div class="form-group">
-                      <label for="cat-title-name">Category Title</label>
-                      <input
-                        id="cat-title-name"
-                        type="text"
-                        class="form-control"
-                      />
+                      <label for="slug">Slug</label>
+                      <input id="slug" type="text" class="form-control" />
                     </div>
-
                     <div class="d-flex justify-content-end">
                       <button type="reset" class="btn btn-danger mr-2">
                         Clear
