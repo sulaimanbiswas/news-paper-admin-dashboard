@@ -300,6 +300,7 @@
               <div class="col-lg-8">
                 <div class="card">
                   <div class="card-body">
+                    <!-- Title -->
                     <div class="form-group">
                       <label for="title" class="h5">Title</label>
                       <input
@@ -309,6 +310,11 @@
                         type="text"
                       />
                     </div>
+
+                    <!-- End Title -->
+
+                    <!-- Slug -->
+
                     <div class="form-group">
                       <label for="slug" class="h5">Slug</label>
                       <input
@@ -318,6 +324,10 @@
                         type="text"
                       />
                     </div>
+
+                    <!-- End Slug -->
+
+                    <!-- Sub Title -->
                     <div class="form-group">
                       <label for="sub-title" class="h5">Sub Title</label>
                       <input
@@ -327,6 +337,9 @@
                         type="text"
                       />
                     </div>
+                    <!-- End Sub Title -->
+
+                    <!-- Description -->
                     <div class="form-group">
                       <label for="description" class="h5">Description</label>
                       <textarea id="description" class="summernote">
@@ -334,12 +347,15 @@
                         </textarea
                       >
                     </div>
+                    <!-- End Description -->
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card">
                   <div class="card-body">
+                    <!-- Local Location -->
+
                     <div class="custom-control custom-checkbox form-group">
                       <input
                         type="checkbox"
@@ -389,6 +405,10 @@
                       </div>
                     </div>
 
+                    <!-- End Local Location -->
+
+                    <!-- Category -->
+
                     <div class="form-group">
                       <label class="h5" for="category">Category</label>
                       <div class="row">
@@ -417,15 +437,42 @@
                       </div>
                     </div>
 
+                    <!-- End Category -->
+
+                    <!-- Featured & Author -->
+
                     <div class="form-group">
-                      <label class="h5" for="reporter">Reporter</label>
-                      <select class="custom-select">
-                        <option selected class="d-none">Select Category</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                      <label class="h5" for="category">Featured & Author</label>
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <p class="card-title-text">Featured</p>
+                          <select class="custom-select">
+                            <option selected class="d-none">
+                              Select Featured
+                            </option>
+                            <option value="1">Middle Featured</option>
+                            <option value="2">Left 1</option>
+                            <option value="3">Left 2</option>
+                            <option value="3">Left 3</option>
+                            <option value="3">Left 4</option>
+                            <option value="3">Left 5</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <p class="card-title-text">Reporter</p>
+                          <select class="custom-select">
+                            <option selected class="d-none">
+                              Select Reporter
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
+
+                    <!-- End Featured & Author -->
 
                     <!-- nor working -->
 
@@ -450,6 +497,8 @@
 
                     <!-- nor working -->
 
+                    <!-- Images -->
+
                     <div class="form-group">
                       <label class="h5" for="images">Images</label>
                       <div class="">
@@ -463,6 +512,67 @@
                         </form>
                       </div>
                     </div>
+
+                    <!-- End Images -->
+
+                    <!-- Images Title -->
+
+                    <div class="form-group">
+                      <label for="imageTitle" class="h5">Images Title</label>
+                      <textarea
+                        id="imageTitle"
+                        class="form-control"
+                        name="imageTitle"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <!-- End Images Title -->
+
+                    <!-- Social Description -->
+
+                    <div class="form-group">
+                      <label for="social-description" class="h5"
+                        >Social Description</label
+                      >
+                      <input
+                        id="social-description"
+                        class="form-control"
+                        name="social-description"
+                        type="text"
+                      />
+                    </div>
+
+                    <!-- End Social Description -->
+
+                    <!-- Meta Tag -->
+
+                    <div class="form-group">
+                      <label for="meta-tag" class="h5">Meta Tag</label>
+                      <input
+                        id="meta-tag"
+                        class="form-control"
+                        name="meta-tag"
+                        type="text"
+                      />
+                    </div>
+
+                    <!-- End Meta Tag -->
+
+                    <!-- Tag -->
+
+                    <div class="form-group">
+                      <label for="tag" class="h5">Tag</label>
+                      <input
+                        id="tagsinput-markup"
+                        type="text"
+                        class="form-control"
+                        value="Amsterdam,Sydney,Beijing,Cairo"
+                        data-role="tagsinput"
+                      />
+                    </div>
+
+                    <!-- End Tag -->
 
                     <div class="form-group">
                       <input
@@ -503,6 +613,9 @@
 
     <!-- dropzone -->
     <script src="js/dropzone/dropzone.min.js"></script>
+
+    <!-- Bootstrap tagsinput -->
+    <script src="js/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
 
     <!-- custom -->
     <script src="js/custom.js"></script>
