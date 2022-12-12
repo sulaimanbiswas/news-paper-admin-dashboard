@@ -274,9 +274,14 @@
             </div>
             <div class="col-md-6">
               <div class="add-new">
-                <a class="btn btn-primary" href="#">
-                  <i class="feather icon-plus"></i> Add New Post</a
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-toggle="modal"
+                  data-target="#category-add"
                 >
+                  <i class="feather icon-plus"></i>Add Category
+                </button>
               </div>
             </div>
           </div>
@@ -309,11 +314,13 @@
                           <td>বাংলাদেশের জাতীয় খবর</td>
                           <td>national</td>
                           <td>
-                            <a
+                            <button
                               class="btn btn-info btn-icon btn-sm mb-1 mr-2 mb-1"
-                              href="#"
-                              ><i class="la la-edit"></i>
-                            </a>
+                              data-toggle="modal"
+                              data-target="#category-add"
+                            >
+                              <i class="la la-edit"></i>
+                            </button>
                             <a
                               class="btn btn-danger btn-icon btn-sm mb-1"
                               href="#"
@@ -329,82 +336,75 @@
               </div>
             </div>
           </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="category-add"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Category</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body p-5">
+                  <form>
+                    <div class="form-group">
+                      <label for="cat-bn-name">Name Bangla</label>
+                      <input
+                        id="cat-bn-name"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cat-en-name">Name English</label>
+                      <input
+                        id="cat-en-name"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cat-title-name">Category Title</label>
+                      <input
+                        id="cat-title-name"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                      <button type="reset" class="btn btn-danger mr-2">
+                        Clear
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        Add Category
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal -->
+
           <!-- Content Card -->
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#exampleModal-02"
-    >
-      Modal Login
-    </button>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal-02"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body p-5">
-            <form>
-              <div class="form-group">
-                <label for="username">Username</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  aria-describedby="emailHelp"
-                  placeholder="Username"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Password"
-                />
-              </div>
-              <div class="form-group">
-                <div class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="customCheck1"
-                  />
-                  <label class="custom-control-label" for="customCheck1">
-                    Remember Me</label
-                  >
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- End Modal -->
     <!-- **********  Wrapper  ********** -->
 
     <!-- **********  Javascript  ********** -->
@@ -421,6 +421,9 @@
 
     <!-- datatables -->
     <script src="js/datatables/datatables.min.js"></script>
+
+    <!-- PRISM -->
+    <script src="js/prism/prism.js"></script>
 
     <!-- custom -->
     <script src="js/custom.js"></script>
