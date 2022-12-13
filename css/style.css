@@ -7,7 +7,6 @@
 @import url(plugins/feather-font/iconfont.css);
 @import url(plugins/flag-icon/flag-icon.css);
 @import url(plugins/sweetalert2/sweetalert2.min.css);
-@import url(plugins/select2/select2.min.css);
 @import url(plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css);
 @import url(plugins/datepicker/daterangepicker.css);
 @import url(plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css);
@@ -27,6 +26,7 @@
 @import url(plugins/animate/animate.min.css);
 @import url(plugins/cropper/cropper.min.css);
 @import url(plugins/weather-icons-master/weather-icons.min.css);
+
 .text-primary {
   color: #335eea !important;
 }
