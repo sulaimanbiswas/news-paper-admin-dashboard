@@ -335,18 +335,15 @@
                           <h5>User information</h5>
                           <div class="my-3">
                             <h6>Email:</h6>
-                            <span>airisatou@gmail.com</span>
+                            <span>eliashossain@gmail.com</span>
                           </div>
                           <div class="my-3">
                             <h6>Phone:</h6>
-                            <span>+44 7700 900684</span>
+                            <span>01628362006</span>
                           </div>
                           <div class="my-3">
                             <h6>Address:</h6>
-                            <span
-                              >7809 South Sleepy Hollow Court Lititz, <br />PA
-                              17543</span
-                            >
+                            <span>726/12, R-10, Adabor, Dhaka - 1207</span>
                           </div>
                         </div>
                       </div>
@@ -378,7 +375,7 @@
             </div>
           </div>
           <!-- Content Card -->
-          <!-- Reporter Add Modal -->
+          <!-- Update Profile Add Modal -->
           <div
             class="modal fade"
             id="update-profile"
@@ -389,7 +386,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Create Reporter</h5>
+                  <h5 class="modal-title">Update Profile</h5>
                   <button
                     type="button"
                     class="close"
@@ -402,18 +399,33 @@
                 <div class="modal-body p-5">
                   <form>
                     <div class="form-group">
-                      <label for="reporter-bn-name">Name Bangla</label>
+                      <label for="about-bn-name">Name</label>
                       <input
-                        id="reporter-bn-name"
+                        id="about-bn-name"
                         type="text"
                         class="form-control"
+                        value="ইলিয়াস হোসাইন"
+                        disabled
                       />
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Address</label>
+                      <input id="address" type="text" class="form-control" />
                     </div>
 
                     <div class="form-group">
                       <label for="phone">Phone</label>
                       <input id="phone" type="text" class="form-control" />
                     </div>
+                    <div class="form-group">
+                      <label for="about-me" class="">About me</label>
+                      <textarea
+                        id="about-me"
+                        class="form-control"
+                        name="about-me"
+                      ></textarea>
+                    </div>
+
                     <div class="form-group">
                       <label>Photo</label>
                       <div class="custom-file">
@@ -432,7 +444,7 @@
                         Clear
                       </button>
                       <button type="submit" class="btn btn-primary">
-                        Add Reporter
+                        Update Profile
                       </button>
                     </div>
                   </form>
@@ -440,7 +452,7 @@
               </div>
             </div>
           </div>
-          <!-- End Reporter Add Modal -->
+          <!-- End Update Profile Add Modal -->
         </div>
       </div>
     </div>
