@@ -228,6 +228,11 @@
                 </a>
               </li>
               <li class="">
+                <a href="pending-post.html"
+                  ><i class="la la-minus"></i> <span> Pending Post </span>
+                </a>
+              </li>
+              <li class="">
                 <a href="all-post.html"
                   ><i class="la la-minus"></i> <span> All Post </span>
                 </a>
@@ -238,8 +243,8 @@
                 </a>
               </li>
               <li class="">
-                <a href="pending-post.html"
-                  ><i class="la la-minus"></i> <span> Pending Post </span>
+                <a href="fb-banner.html"
+                  ><i class="la la-minus"></i> <span> Facebook Banner </span>
                 </a>
               </li>
             </ul>
@@ -352,7 +357,7 @@
                           <td>Elias Hossain</td>
                           <td>01628362006</td>
                           <td>eliashossain@gmail.com</td>
-                          <td>জনবাণী ডেস্ক</td>
+                          <td>জেলা প্রতিনিধি</td>
                           <td>
                             <button
                               class="btn btn-info btn-icon btn-sm mb-1 mr-2 mb-1"
@@ -423,6 +428,14 @@
                       <input id="email" type="text" class="form-control" />
                     </div>
                     <div class="form-group">
+                      <label for="password">Password</label>
+                      <input
+                        id="password"
+                        type="password"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
                       <label for="phone">Phone</label>
                       <input id="phone" type="text" class="form-control" />
                     </div>
@@ -486,33 +499,57 @@
                 <div class="modal-body p-5">
                   <form>
                     <div class="form-group">
-                      <label for="sub-category">Division</label>
-                      <select class="custom-select">
-                        <option selected class="d-none">Select Division</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="div-bn-name">Name Bangla</label>
+                      <label for="reporter-bn-name">Name Bangla</label>
                       <input
-                        id="div-bn-name"
+                        id="reporter-bn-name"
                         type="text"
                         class="form-control"
                       />
                     </div>
                     <div class="form-group">
-                      <label for="div-en-name">Name English</label>
+                      <label for="reporter-en-name">Name English</label>
                       <input
-                        id="div-en-name"
+                        id="reporter-en-name"
                         type="text"
                         class="form-control"
                       />
                     </div>
                     <div class="form-group">
-                      <label for="slug">Slug</label>
-                      <input id="slug" type="text" class="form-control" />
+                      <label for="email">Email</label>
+                      <input id="email" type="text" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input
+                        id="password"
+                        type="password"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input id="phone" type="text" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="designation">Designation</label>
+                      <input
+                        id="designation"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label>Photo</label>
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="photo"
+                        />
+                        <label class="custom-file-label" for="photo"
+                          >Choose file</label
+                        >
+                      </div>
                     </div>
                     <div class="d-flex justify-content-end">
                       <button type="reset" class="btn btn-danger mr-2">
