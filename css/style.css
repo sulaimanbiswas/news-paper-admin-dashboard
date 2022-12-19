@@ -27,6 +27,7 @@
 @import url(plugins/cropper/cropper.min.css);
 @import url(plugins/weather-icons-master/weather-icons.min.css);
 
+/* text color */
 .text-primary {
   color: #335eea !important;
 }
@@ -58,6 +59,8 @@
 .text-light {
   color: #898b96 !important;
 }
+
+/* bg color */
 
 .bg-primary {
   background-color: #335eea !important;
@@ -91,6 +94,8 @@
   background-color: #161c2d !important;
 }
 
+/* bg soft color */
+
 .bg-soft-primary {
   background-color: rgba(51, 94, 234, 0.2) !important;
 }
@@ -122,6 +127,8 @@
 .bg-soft-dark {
   background-color: rgba(22, 28, 45, 0.2) !important;
 }
+
+/* bg overlay color */
 
 .bg-primary-overlay {
   background: #335eea;
@@ -170,6 +177,8 @@
   /* The Fallback */
   background: rgba(22, 28, 45, 0.3);
 }
+
+/* bg social color */
 
 .bg-facebook {
   background-color: #40599a;
@@ -223,6 +232,8 @@
   background-color: #f40082;
 }
 
+/* font size */
+
 .font-xs {
   font-size: 0.8571rem;
 }
@@ -254,6 +265,8 @@
 .font-xlll {
   font-size: 2.429rem;
 }
+
+/* font width */
 
 .fw-100 {
   font-weight: 100;
@@ -291,9 +304,13 @@
   font-weight: 900;
 }
 
+/* border radius */
+
 .border-radius {
   border-radius: 0.71rem !important;
 }
+
+/* header */
 
 .header.header-fixed {
   position: fixed;
